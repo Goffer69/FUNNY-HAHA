@@ -1,0 +1,34 @@
+using System;
+
+namespace GHJHVJH
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           Console.WriteLine("GISSA HELTAL 1-100");
+           Random slump=new Random();
+           int rand = slump.Next(0,101);
+           int SHIT = 0;
+           int FUCK = int.Parse(Console.ReadLine());
+           while (FUCK != rand){
+
+               if (FUCK < rand){
+
+                  Console.WriteLine("TOO LOW =)");
+                
+               }
+               if (FUCK > rand){
+
+                    Console.WriteLine("TOO HIGH, STINKY =)");
+               }
+                Console.WriteLine("GUESS A NUMBER AGAIN");
+                FUCK=int.Parse(Console.ReadLine());
+                SHIT += 1;
+           }
+            Console.WriteLine("YOU GUESSED THE RIGHT NUMBER FUCK FACE =)");
+             Console.WriteLine("YOU GUESSED " + SHIT + " TIMES");
+        }
+    }
+
+}
