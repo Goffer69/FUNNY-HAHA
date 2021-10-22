@@ -10,23 +10,23 @@ namespace GHJHVJH
            Random slump=new Random();
            int rand = slump.Next(0,101);
            int SHIT = 0;
-           int FUCK = int.Parse(Console.ReadLine());
-           while (FUCK != rand){
+           int F = int.Parse(Console.ReadLine());
+           while (F != rand){
 
-               if (FUCK < rand){
+               if (F < rand){
 
                   Console.WriteLine("TOO LOW =)");
                 
                }
-               if (FUCK > rand){
+               if (F > rand){
 
                     Console.WriteLine("TOO HIGH, STINKY =)");
                }
                 Console.WriteLine("GUESS A NUMBER AGAIN");
-                FUCK=int.Parse(Console.ReadLine());
+                F=int.Parse(Console.ReadLine());
                 SHIT += 1;
            }
-            Console.WriteLine("YOU GUESSED THE RIGHT NUMBER FUCK FACE =)");
+            Console.WriteLine("YOU GUESSED THE RIGHT NUMBER F FACE =)");
              Console.WriteLine("YOU GUESSED " + SHIT + " TIMES");
         }
     }
